@@ -12,7 +12,7 @@ document.getElementById("check-nutrition").addEventListener("click", () => {
 
   //GET request to the Ninjas Nutrition API
   fetch(`https://api.api-ninjas.com/v1/nutrition?query=${encodeURIComponent(query)}`, {
-    headers: { 'X-Api-Key': 'BQGUxYUVAEaNdil2DBPOmg==RlXZffZO1X2Y4gWf' } // my unique API key from signing up on site
+    headers: { 'X-Api-Key': 'insert API Key here' } // my unique API key from signing up on site
   })
     .then(res => {
       //error throwing for response
