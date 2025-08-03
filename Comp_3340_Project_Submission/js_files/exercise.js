@@ -8,7 +8,7 @@ const sectionResults = document.getElementById('results');
 
 
 const RAPIDAPI_HOST = 'exercisedb.p.rapidapi.com';
-const RAPIDAPI_KEY = 'e722dfa112msh68cbc5800cdf936p13abddjsnd0c54be54ae4';  //my unique API key from rapidapi site
+const RAPIDAPI_KEY = 'insert API Key here';  //my unique API key from rapidapi site
 
 //event listener for search feature
 btnSearch.addEventListener('click', () => {
