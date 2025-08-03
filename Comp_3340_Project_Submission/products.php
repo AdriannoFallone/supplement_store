@@ -3,7 +3,7 @@
     $host = 'localhost';
     $db = 'fallone2_supplement_store';
     $user = 'fallone2_supplement_store';
-    $pass = 'jh9xJ4MS9xcnhmD4SWwg';
+    $pass = '';
 session_start(); //starts session
 
 //confirms if user is logged in
