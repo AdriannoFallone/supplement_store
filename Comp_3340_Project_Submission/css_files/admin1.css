@@ -1,0 +1,95 @@
+/*
+Adrianno Fallone
+Final Project Submission - admin1.css
+*/
+
+/*body styling*/
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+/*header anchor styling*/
+header a
+{
+    text-decoration: none;
+    color: limegreen;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+/*headings styling for titles and labels*/
+h1,h2,
+h3 {
+    color: limegreen;
+    text-align: left;
+}
+
+/*section container styling*/
+.section {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-left: 5px solid limegreen;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(160, 255, 68, 0.1);
+}
+
+/*form inputs and select elements styling*/
+select,
+input[type="text"],
+input[type="number"] {
+    background-color: #222;
+    border: 1px solid #555;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+/*Focus styling for select elements and form inputs*/
+select:focus,
+input:focus {
+    border-color: limegreen;
+    outline: none;
+}
+
+/*table element styling*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+
+th {
+    background-color: #2a2a2a;
+    color: limegreen;
+}
+
+/*button styling*/
+button {
+    background-color: limegreen;
+    border: none;
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+/*button hover feature styling*/
+button:hover {
+    background-color: #c0ff75;
+}

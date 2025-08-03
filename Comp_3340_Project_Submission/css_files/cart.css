@@ -1,0 +1,265 @@
+/*
+Adrianno Fallone
+Final Project Submission - cart.css
+*/
+
+
+/* body section styling (standard view)*/
+body.standard_view {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    margin: 0;
+    line-height: 1.8;
+}
+
+/* Header + Footer styling for page*/
+header, footer {
+    background-color: #121212;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+header h1 { /*header's h1 styling props*/
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: limegreen;
+    text-align: center;
+}
+/*footer text styling properities*/
+footer p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Nav bar styling*/
+.navigationbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*main logo styling*/
+.logo {
+    color: limegreen;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+/*nav-links styling properities*/
+
+.links_navigation {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    padding-left: 0;
+}
+/*anchor styling*/
+.links_navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.2s ease;
+}
+
+/*link-hover feature styling props*/
+
+.links_navigation a:hover {
+    color: limegreen;
+    background-color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+/*cart container styling for page*/
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+/* styling the cart items themselves*/
+.cart-item {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 255, 0, 0.1);
+    animation: popIn 0.5s ease forwards;
+}
+
+.cart-item img { /*imgs for products* styling*/
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.item-info h3 /*heading h3 styling for item info*/{
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: limegreen;
+}
+
+.item-info p { /*item info p-text styling*/
+    margin: 0;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/*display of cart summary container styling*/
+.cart-summary {
+    margin-top: 2rem;
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.1);
+}
+
+.cart-summary h2 {
+    color: limegreen;
+    margin-bottom: 1rem;
+}
+
+.cart-summary p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #f0f0f0;
+}
+
+/*button for checking out styling properties*/
+.checkout-btn {
+    background-color: limegreen;
+    color: black;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/*hover-over-button styling*/
+
+.checkout-btn:hover {
+    background-color: white;
+    color: limegreen;
+}
+
+/*link back to products styling*/
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.2s ease;
+}
+
+.back-link:hover {
+    color: limegreen; /*unique hovering color compared to other elements*/
+}
+
+
+/* user login view styling */
+.user-info {
+    background-color: #1a1a1a;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    color: #dfffd6;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*anchor styling*/
+
+.user-info a {
+    color: #99ff99;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+/*hover feature styling*/
+.user-info a:hover {
+    color: #66ff66;
+}
+
+.user-info span {
+    font-weight: 500;
+}
+
+
+
+/* checkout container styling */
+.checkout-items {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #121212;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+/*item card styling*/
+.checkout-item {
+    background-color: #1e1e1e;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #2e2e2e;
+    border-left: 4px solid limegreen;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+/*hover feature styling*/
+.checkout-item:hover {
+    transform: scale(1.02);
+}
+
+/* Text styling for checkout items*/
+.checkout-item p {
+    margin: 5px 0;
+    color: #f0f0f0;
+}
+
+.checkout-item strong {
+    color: limegreen;
+    font-size: 1.1rem;
+}
+
+/*Total and heading styling*/
+h2,
+h3 {
+    color: limegreen;
+    text-align: center;
+}
+
+/* Button styling */
+form button[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: limegreen;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #32cd32;
+}

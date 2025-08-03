@@ -1,0 +1,311 @@
+/*
+Adrianno Fallone
+Final Project Submission - cutting.css
+*/
+
+/*body styling for setting font, background color, text color */
+body.standard_view
+{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    margin: 0;
+    line-height: 2.5; /*vertical spacing */
+}
+
+/* Header and footer styling: */
+header,footer
+{
+    background-color: #121212;
+    padding: 1rem 2rem;
+}
+
+/* Header title styling*/
+header h1
+{
+    font-size: 15px;
+    margin-top: 0;
+}
+
+/* Nav bar styling: flexbox and space-between to align items accordingly*/
+.navigationbar
+{
+    align-items: center; /* Vertically centering*/
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+}
+
+/* Logo styling: red-orange color, bold, very large font size */
+.logo
+{
+    color: orangered;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* Nav links container styling*/
+.links_navigation
+{
+    padding: 1rem; 
+    gap: 1.2rem;
+    list-style-type: none; /*default list removal */
+    display: flex;
+}
+
+/* Nav links and select elements styling*/
+.links_navigation a, select
+{
+    background: none;
+    border: none;
+    transition: 0.2s ease; /*transition for hover */
+    font-weight: 550; /*bolder font weight */
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+/* Hover-state for nav links and selects styling: (I did a red-orange text and white background to ensure it stands out to user*/
+.links_navigation a:hover, select:hover{
+    color: orangered;
+    background-color: white;
+}
+
+/* Heading text styling */
+.ht
+{
+    text-align: center;
+    font-size: 3rem;
+    color: orangered;
+    background: none;
+    border-bottom: 2px orangered;
+}
+
+/* Heading h2 styling within .ht*/
+.ht h2
+{
+    color: #ff6347;
+    font-size: 2rem;
+    margin-bottom: 1rem; 
+}
+
+/* Paragraph styling within .ht*/
+.ht p
+{
+    padding-top: 0%; /*0 padding of top*/
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Product overview container styling*/
+.product_overview
+{
+    margin: auto;
+    max-width: 1000px;
+    padding: 2.1rem;
+}
+
+/* Grid container for products styling*/
+.grid_products
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* responsive grid with autofill*/
+    gap: 1.5rem;
+}
+
+/* Styling for images inside grid_products*/
+.grid_products img{
+    max-height: 100px;
+    display: flex; 
+}
+
+/* Individual product container styling*/
+.product-holder
+{
+    box-shadow: 0 8px 20px 8px rgba(255, 69, 0, 0.1);
+}
+
+/* animation keyframe for popIn feature: (fade in/scale up) */
+@keyframes popIn
+{
+    0%
+    {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Pop out container styling*/
+.pop_out
+{
+    animation: popIn 0.8s ease-in-out forwards;
+    display: flex;
+    margin: 2rem auto;
+    max-width: 1000px;
+    align-items: stretch;
+    overflow: hidden;
+    border: 6px solid orangered;
+    border-radius: 1rem;
+}
+
+/* styling for elements inside pop_out*/
+.pop_out_elements
+{
+    position: relative;
+    flex: 1;
+    display: flex;
+}
+
+/* Images inside pop_out_elements styling*/
+.pop_out_elements img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* Maintains aspect ratio*/
+}
+
+/* styling for promo text positioned by bottom of image*/
+.promo_text
+{
+    position: absolute;
+    top: 80%; /* positioned at 80% from the top */
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(121, 19, 19, 0.7);
+    left: 20%;
+    text-align: center;
+}
+
+/* Promotional message container styling*/
+.promo_msg
+{
+    background-color: #fff5f0;
+    border-left:  6px solid orangered;
+    padding: 2rem;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    font-size: 1.1rem;
+    margin: 0;
+    text-shadow: 0px 0px 1px rgba(255, 99, 71, 0.7);
+}
+
+/* Macro panel container styling with slight red-orange glow in background*/
+.nutrition-panel {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    color: #f0f0f0;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.15);
+    text-align: center;
+}
+
+/* Macro panel input field styling */
+.nutrition-panel input {
+    width: 80%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 6px;
+    margin-right: 0.5rem;
+    background: #333;
+    color: white;
+}
+
+/*Macro panel buttons: red-orange background, no border, black text, rounded corners, pointer cursor */
+.nutrition-panel button {
+    padding: 0.6rem 1rem;
+    background: orangered;
+    border: none;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/*Macro panel button hover styling*/
+.nutrition-panel button:hover {
+    background: salmon; /*different shade of green*/
+}
+
+/* Nutrition results container styling*/
+#nutrition-results {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+/* Nutrition results heading styling*/
+#nutrition-results h3 {
+    color: orangered;
+    margin-bottom: 0.5rem;
+}
+
+/* Nutrition results paragraphs styling*/
+#nutrition-results p {
+    margin: 0.3rem 0;
+}
+
+/* Product card-container styling: dark background, rounded corners, slight red-orange glow */
+.product_card {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 69, 0, 0.2);
+  animation: popIn 0.5s ease-in-out;
+  text-align: center;
+}
+
+/* Product card images styling*/
+.product_card img {
+  max-width: 100%;
+  height: auto; /*auto-height*/
+  margin-bottom: 0.5rem;
+}
+
+/* Product card title styling */
+.product_card h3 {
+  color: orangered;
+  margin: 0.5rem 0;
+}
+
+/* Product card paragraph styling*/
+.product_card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Product card text styling*/
+.product_card strong {
+  color: white;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Scrolling container grid_products styling*/
+.scrolling-container .grid_products {
+    display: flex;
+    flex-wrap: nowrap; /* this works to prevent wrapping to new line */
+    gap: 1.5rem;
+}
+
+/* Product cards inside horizontal scrolling container styling */
+.grid_products .product_card {
+    flex: 0 0 auto;
+    width: 250px; /* absolute width*/
+}
+
+/* Scrolling container main styling */
+.scrolling-container {
+    overflow-x: auto; 
+    overflow-y: hidden; /* not enabled vertical scroll */
+    white-space: nowrap; 
+    padding: 1rem;
+    scrollbar-width: none; /*hide scrollbar for better UI*/
+}

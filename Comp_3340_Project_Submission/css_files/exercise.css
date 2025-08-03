@@ -1,0 +1,136 @@
+/*
+Adrianno Fallone
+Final Project Submission - exercise.css
+*/
+
+/*body styling for setting font, background color, text color */
+body.standard_view
+{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    margin: 0;
+    line-height: 2.5; /*vertical spacing */
+}
+
+/* Header and footer styling: */
+header,footer
+{
+    background-color: #121212;
+    padding: 1rem 2rem;
+}
+
+/* Header title styling*/
+header h1
+{
+    font-size: 15px;
+    margin-top: 0;
+}
+
+/* Nav bar styling: flexbox and space-between to align items accordingly*/
+.navigationbar
+{
+    align-items: center; /* Vertically centering*/
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+}
+
+/* Logo styling: lime green color, bold, very large font size */
+.logo
+{
+    color: limegreen;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* Nav links container styling*/
+.links_navigation
+{
+    padding: 1rem; 
+    gap: 1.2rem;
+    list-style-type: none; /*default list removal */
+    display: flex;
+}
+
+/* Nav links and select elements styling*/
+.links_navigation a, select
+{
+    background: none;
+    border: none;
+    transition: 0.2s ease; /*transition for hover */
+    font-weight: 550; /*bolder font weight */
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+/* Hover-state for nav links and selects styling: (I did a lime green text and white background to ensure it stands out to user*/
+.links_navigation a:hover, select:hover{
+    color: limegreen;
+    background-color: white;
+}
+
+/*search section styling*/
+#exercise-search {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background-color: limegreen;
+}
+
+/* search field styling*/
+#search-input {
+  flex-grow: 1;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: lightgreen;
+}
+/*search button styling*/
+#search-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/*search button hover feature styling*/
+#search-btn:hover {
+  background-color: #45a049;
+}
+
+/*results styling grid*/
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+/*exercise card styling for displaying results*/
+.exercise-card { /*card holder container*/
+  background: limegreen;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.exercise-card:hover { /*exercise card hover feature styling*/
+  transform: translateY(-4px);
+}
+
+.exercise-card h3 { /*heading styling for ecard*/
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.exercise-card p {/*p-text styling for ecard*/
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
