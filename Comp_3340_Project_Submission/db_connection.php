@@ -3,7 +3,7 @@
 $host = 'localhost';
 $db = 'fallone2_supplement_store';
 $user = 'fallone2_supplement_store';
-$pass = 'jh9xJ4MS9xcnhmD4SWwg';
+$pass = '';
 
 //connection made to db
 $conn = new mysqli($host, $user, $pass, $db);
