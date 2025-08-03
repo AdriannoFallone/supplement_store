@@ -7,7 +7,7 @@ session_start();  //starts session
 $host = 'localhost';
 $db = 'fallone2_supplement_store';
 $user = 'fallone2_supplement_store';
-$pass = 'jh9xJ4MS9xcnhmD4SWwg';
+$pass = '';
 
 $conn = new mysqli($host, $user, $pass, $db); //establishes connection to db
 
